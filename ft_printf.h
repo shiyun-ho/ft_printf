@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 16:52:44 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/08 19:27:56 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/08 19:58:34 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@
 
 int		ft_printf(const char* input, ...);
 int		ft_printchar(char c);
+int		ft_printstr(char *s);
 
 #endif

@@ -15,7 +15,7 @@ ft_printf is a project which is intended to recreate printf through the use of *
 - [ ] Update [headerfile](ft_printf.h) to include functions whenever appropriate
 - [x] Write [function](ft_printf.c) which accesses variadic function when ft_printf() is called
 - [ ] Implement the following conversions:
-   - [ ] %c single character
+   - [x] %c single character
    - [ ] %s string (as defined by common C convention)
    - [ ] %p void * pointer argument (in hexadecimal format)
    - [ ] %d decimal (base 10) number

@@ -6,21 +6,22 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 13:51:34 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/08 19:26:55 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/08 19:54:25 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
 #include "ft_printf.h"
+#include <stdarg.h>
 
-int		check_format_specifier(char param, va_list args)
+int	check_format_specifier(char param, va_list args)
 {
-	int		print_strlen;
+	int	print_strlen;
 
 	print_strlen = 0;
 	if (param == 'c')
 		print_strlen += ft_printchar(va_arg(args, int));
-
+	if (param == 's')
+		print_strlen += ft_printstr(va_arg(args, char *));
 	return (print_strlen);
 }
 /**
@@ -29,14 +30,14 @@ int		check_format_specifier(char param, va_list args)
  * @param {...} variadic arg: Signals to take in variadic arguments
  * @returns {count} number of characters printed
  */
-int		ft_printf(const char* input, ...)
+int	ft_printf(const char *input, ...)
 {
-	//list of arguments passed to function
 	va_list			args;
 	unsigned int	i;
-	int 			print_strlen;
+	int				print_strlen;
 
-	//initialise access to va_list
+	// list of arguments passed to function
+	// initialise access to va_list
 	va_start(args, input);
 	i = 0;
 	print_strlen = 0;
@@ -48,7 +49,7 @@ int		ft_printf(const char* input, ...)
 			print_strlen += check_format_specifier(input[i], args);
 		}
 		else
-			print_strlen += ft_printchar((char) input[i]);
+			print_strlen += ft_printchar((char)input[i]);
 		i++;
 	}
 	va_end(args);
