@@ -13,7 +13,7 @@ ft_printf is a project which is intended to recreate printf through the use of *
 ## To Do
 - [x] Modify [Makefile](Makefile) to use libft
 - [ ] Update [headerfile](ft_printf.h) to include functions whenever appropriate
-- [ ] Write [function](ft_printf.c) which accesses variadic function when ft_printf() is called
+- [x] Write [function](ft_printf.c) which accesses variadic function when ft_printf() is called
 - [ ] Implement the following conversions:
    - [ ] %c single character
    - [ ] %s string (as defined by common C convention)

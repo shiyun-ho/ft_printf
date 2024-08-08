@@ -6,7 +6,7 @@
 #    By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/20 15:53:16 by hshi-yun          #+#    #+#              #
-#    Updated: 2024/08/02 20:44:23 by hshi-yun         ###   ########.fr        #
+#    Updated: 2024/08/08 19:36:21 by hshi-yun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 LIBFT = ./libft
 
-SRC = ft_printf.c
+SRC = ft_printf.c ft_printchar.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

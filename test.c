@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 18:38:04 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/08 13:21:19 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/08 19:47:52 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,17 @@
 
 int main()
 {
-	int a = 1;
-	int *a_ptr = &a;
+	// TEST 1: Printing of str without any format specifier
+	// printf("Hello world\n");
+	// ft_printf("Hello world\n");
+
+	//TEST 2:
+	// printf("Hello world. %c\n", 'a');
+	// ft_printf("Hello world. %c\n", 'a');
+
+	
+	// int a = 1;
+	// int *a_ptr = &a;
 	// printf("abc\n");
 	// ft_printf("abc\n\n");
 
@@ -48,8 +57,8 @@ int main()
 //TODO: Handle this case
 /*
 hello world %s
-hello world %% cs 
+hello world %% cs
 */
-	printf("hello world %%% cs \n", a);
-	ft_printf("hello world %%% cs \n", a);
+	// printf("hello world %%% cs \n", a);
+	// ft_printf("hello world %%% cs \n", a);
 }
