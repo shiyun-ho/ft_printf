@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 13:51:34 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/08 19:54:25 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/09 13:45:53 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	check_format_specifier(char param, va_list args)
 		print_strlen += ft_printchar(va_arg(args, int));
 	if (param == 's')
 		print_strlen += ft_printstr(va_arg(args, char *));
+	if (param == 'd' || param == 'i')
+		print_strlen += ft_printnbr(va_arg(args, int));
 	return (print_strlen);
 }
 /**

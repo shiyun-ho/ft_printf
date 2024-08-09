@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printstr.c                                      :+:      :+:    :+:   */
+/*   ft_printnbr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/08 19:54:11 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/09 13:33:47 by hshi-yun         ###   ########.fr       */
+/*   Created: 2024/08/09 13:37:00 by hshi-yun          #+#    #+#             */
+/*   Updated: 2024/08/09 13:51:58 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdarg.h>
 
-int		ft_printstr(char *s)
+int		ft_printnbr(int value)
 {
-	int		i;
-	int		strlen;
+	char		*int_to_str;
+	int			str_len;
 
-	i = 0;
-	strlen = 0;
-	//TODO: Validate the NULL return testcase
-	if (s == NULL)
-	{
-		write(1, "(null)", 6);
-		strlen += 6;
-		return (strlen);
-	}
-	strlen = (int) ft_strlen(s);
-	while (i < strlen)
-	{
-		write(1, &s[i], 1);
-		i++;
-	}
-	return (strlen);
+	int_to_str = ft_itoa(value);
+	str_len = ft_strlen(int_to_str);
+	ft_putstr_fd(int_to_str, 1);
+	free(int_to_str);
+
+	return (str_len);
 }
