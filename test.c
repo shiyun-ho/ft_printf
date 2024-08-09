@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 18:38:04 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/08 19:47:52 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/09 17:20:21 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@ int main()
 {
 	char c = 'a';
 
-	//TEST 1: Normal function 
+	//TEST 1: Normal function
 	//TEST 2: Negative case (when input is NULL)
-	printf("%c\n", NULL);
-	ft_printf("%c\n", NULL);
+	// printf("%c\n", NULL);
+	// ft_printf("%c\n", NULL);
+
 	// TEST 1: Printing of str without any format specifier
 	// printf("Hello world\n");
 	// ft_printf("Hello world\n");
@@ -29,7 +30,11 @@ int main()
 	// printf("Hello world. %c\n", 'a');
 	// ft_printf("Hello world. %c\n", 'a');
 
-
+	/*
+	TEST: %u
+	*/
+	printf("printf: %u \n", -1);
+	ft_printf("ft_printf: %u \n", -1);
 	// int a = 1;
 	// int *a_ptr = &a;
 	// printf("abc\n");

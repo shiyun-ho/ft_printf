@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 19:54:11 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/09 13:33:47 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/09 14:17:29 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int		ft_printstr(char *s)
 
 	i = 0;
 	strlen = 0;
-	//TODO: Validate the NULL return testcase
 	if (s == NULL)
 	{
 		write(1, "(null)", 6);
