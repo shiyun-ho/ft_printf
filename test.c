@@ -15,6 +15,12 @@
 
 int main()
 {
+	char c = 'a';
+
+	//TEST 1: Normal function 
+	//TEST 2: Negative case (when input is NULL)
+	printf("%c\n", NULL);
+	ft_printf("%c\n", NULL);
 	// TEST 1: Printing of str without any format specifier
 	// printf("Hello world\n");
 	// ft_printf("Hello world\n");
@@ -23,7 +29,7 @@ int main()
 	// printf("Hello world. %c\n", 'a');
 	// ft_printf("Hello world. %c\n", 'a');
 
-	
+
 	// int a = 1;
 	// int *a_ptr = &a;
 	// printf("abc\n");

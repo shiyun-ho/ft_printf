@@ -18,8 +18,14 @@ int		ft_printstr(char *s)
 	int		strlen;
 
 	i = 0;
+	strlen = 0;
+	//TODO: Validate the NULL return testcase 
 	if (s == NULL)
-		return (0);
+	{
+		write(1, "null", 6);
+		strlen += 6;
+		return (strlen);
+	}
 	strlen = (int) ft_strlen(s);
 	while (i < strlen)
 	{
