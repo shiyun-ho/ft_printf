@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 13:51:34 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/21 20:23:12 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/23 20:14:40 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,9 @@ int	ft_printf(const char *input, ...)
 		if (input[i] == '%')
 		{
 			i++;
+			if (input[i] == '%' && input[i + 1] == '%'
+				&& input[i + 2] == '\0')
+				print_strlen = -1;
 			print_strlen += check_format_specifier(input[i], args);
 		}
 		else

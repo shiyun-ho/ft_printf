@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:36:53 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/21 14:37:33 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/23 19:22:35 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 int	ft_print_percent(void)
 {
+	int	strlen;
+
+	strlen = 1;
 	ft_putchar_fd('%', 1);
-	return (1);
+	return (strlen);
 }

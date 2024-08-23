@@ -6,7 +6,7 @@
 /*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 15:15:57 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/08/21 20:14:52 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/08/23 20:14:19 by hshi-yun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int	ft_print_exception(char c)
 		ft_putchar_fd(c, 1);
 		strlen = 2;
 	}
-	strlen = -1;
+	else
+		strlen = -1;
 	return (strlen);
 }

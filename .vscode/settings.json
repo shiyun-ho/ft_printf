@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+		"stddef.h": "c",
+		"libft.h": "c",
+		"type_traits": "c",
+		"utility": "c",
+		"stdarg.h": "c",
+		"unistd.h": "c",
+		"ft_printf.h": "c",
+		"stdint.h": "c",
+		"stdio.h": "c"
+	},
+    "editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.renderWhitespace": "all",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true
+}
+
